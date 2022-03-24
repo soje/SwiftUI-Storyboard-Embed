@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="w7c-no-kbK">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Welcome Hosting Controller-->
+        <scene sceneID="2GZ-Lr-khc">
+            <objects>
+                <hostingController storyboardIdentifier="welcome" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Naj-73-Wdt" customClass="WelcomeHostingController" customModule="Embed_SwiftUI_IntoUIKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Da4-8d-NHF"/>
+                    <connections>
+                        <segue destination="3TI-ma-xzi" kind="show" identifier="presentLaunchView" id="0LS-Dz-Rqq"/>
+                    </connections>
+                </hostingController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DHM-Rz-gVE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="347.82608695652175" y="-80.357142857142847"/>
+        </scene>
+        <!--Launch Hosting Controller-->
+        <scene sceneID="gax-sf-A76">
+            <objects>
+                <hostingController storyboardIdentifier="launch" useStoryboardIdentifierAsRestorationIdentifier="YES" id="3TI-ma-xzi" customClass="LaunchHostingController" customModule="Embed_SwiftUI_IntoUIKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="WBq-Be-Nqq"/>
+                    <connections>
+                        <segue destination="Q2j-g2-EYr" kind="presentation" identifier="presentDetailsModal" destinationCreationSelector="presentDetailsModal:" id="rPV-iy-46n"/>
+                    </connections>
+                </hostingController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GQq-eR-UK8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1112" y="-80"/>
+        </scene>
+        <!--Launch Details Hosting Controller-->
+        <scene sceneID="qRU-pA-2Fz">
+            <objects>
+                <hostingController storyboardIdentifier="launchDetails" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Q2j-g2-EYr" customClass="LaunchDetailsHostingController" customModule="Embed_SwiftUI_IntoUIKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="pgK-ae-bFF"/>
+                </hostingController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bb5-nD-G0s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1874" y="-80"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="CBH-QO-Y4d">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="w7c-no-kbK" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ls1-xe-Mpj">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Naj-73-Wdt" kind="relationship" relationship="rootViewController" id="b48-U8-kpS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Wf-Mi-dbF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-436" y="-80"/>
+        </scene>
+    </scenes>
+</document>
