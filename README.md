@@ -35,7 +35,7 @@ After creating an Xcode project using Storyboard and Swift, I deleted everything
 
 I added the UIHostingControllers and create the associated SwiftUI classes.
 
-I linked the two controllers with a follow that presents the view as modal.
+I linked the two controllers with a segue action that presents the view as modal.
 
 I created the closure to link the modal opening action.
 
